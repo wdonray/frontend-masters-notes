@@ -192,3 +192,21 @@ setTimeout(function() { console.log(giveHiSometimes()); }, 2000); // -> undefine
 setTimeout(function() { console.log(giveHiSometimes()); }, 4000); // -> undefined
 setTimeout(function() { console.log(giveHiSometimes()); }, 8000); // -> 'hi'
 
+function throttle(fn, time) {
+  let isWaiting = false;
+
+  // put all the arguments into an array
+
+  //returns a new throttled version of our function
+  return function (...args) {
+    if (isWaiting) {
+      return;
+    }
+
+    fn(...args);
+    isWaiting = true;
+    setTimeout(function() {
+      isWaiting = false;
+    }, time);
+  }
+}
