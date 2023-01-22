@@ -38,9 +38,11 @@
 - Requirements
   - Describe at a high level what the system contains.
   - Start by asking what area to focus on.
+  - General Reqs and then Functional Reqs
   - Continue to ask clarifying questions.
   - Note down all requirements.
 - Architecture
+  - If we want responsive, L, M and S
   - Design Flow of application
 - Data Model
   - Create Data Structure (Data Types)
